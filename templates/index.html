@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link href="{{url_for('static',filename='style.css')}}" rel="stylesheet" type="text/css" />
+    <title>{{page_settings["title"]}}</title>
+    <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+</head>
+<body>
+    <div class="divs" id="divs">
+        <div id="head" class="head">{{page_settings["title"]}}</div>
+        <div class="main" id="main">
+            <form name="queryForm" action="/" method="post">
+                <div class="so_box" id="11">
+                    {{ form.search_key }}
+                </div>
+                <div class="so_box" id="33">
+                    {{ form.verify_code }}
+                    {% if page_settings["code"] %}
+                    {% endif %}
+                    <div class="more" id="clearkey">
+                        <span style="color: red;">验证码错误</span>
+                        <img class="verify_code"  id="Codes" src="/ver_code " onclick="this.src='/ver_code?'+ Math.random()">
+                    </div>
+                </div>
+                <div class="so_but">
+                    <input type="submit" name="button" class="buts" id="sub" value="立即查询" />
+                    <input type="button" class="buts" value="刷新本页" name="print" onclick="location.reload();">
+                </div>
+            </form>
+            <div class="so_bus" id="tishi">{{page_settings["notice"]}}</div>
+            <div class="so_bus" id="tishi"><p id="hitokoto">:D 获取中...</p></div>
+        </div>
+        <div class="boto" id="boto">
+        &copy;&nbsp; <a href='{{page_settings["webUrl"]}}' target="_blank">{{page_settings["CopyRight"]}}</a>
+        </div>
+    </div>
+
+</body>
+</html>

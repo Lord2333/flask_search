@@ -1,0 +1,35 @@
+*{margin:0;padding:0;font-size:14px;line-height:150%;font-family:"microsoft yahei",SimHei;}
+body,html{height:100%;text-align:center;overflow:hidden;background-color:#d0d0d0;}
+.html{height:100%;width:100%;position:relative;overflow-y:auto;overflow-x:hidden;}
+strong{color:red;}
+a{color:blue;text-decoration:none;}
+a:hover {text-decoration:none;color:green;}
+.r {text-align:right;width:30%;}
+.l {text-align:left;color:green;}
+.simg{width:50%;min-width:88px;max-width:188px;}
+#divs{margin:0 auto;min-height:98%;position:relative;box-sizing:border-box;}
+.divs{width:100%;max-width:1200px;min-width:300px;background-color:#F0F0F0;}
+strong{color:red;}
+.head{position:fixed;top:0px;margin:0 auto;width:100%;max-width:1200px;min-width:300px;z-index:10;display:block;}
+#head{line-height:180%;background-color:#0180CF;font-size:16px;line-height:40px;color:white;}
+.back{position:absolute;right:9px;top:0px;line-height:40px;}
+.d {border:1px white solid;line-height:150%;color:white;font-size:12px;padding:3px 5px;}
+.d:hover {text-decoration:none;background-color:white;color:#0180CF; }
+#main{margin:2px auto;padding:30px 1px;width:100%;}
+form{margin:24px 0;text-align:left;}
+.so_box{margin:10px auto;height:40px;line-height:40px;background-color:white;width:92%;border:1px #CACACA solid;margin-top:12px;position:relative;border-radius: 5px}
+.so_box .txts{margin:0px auto;height:31px;outline: none;line-height:31px;width:88%;padding-left:10px;border:0px;color:#333333;background-color:#FFFFFF;overflow:hidden;}
+.so_box .buts{margin:0 auto;height:40px;line-height:40px;width:100%;padding-left:10px;border:0px;color:#333333;background:#0180CF url(line_bg.jpg) repeat-x;border-radius:25px;}
+.so_box .more{position:absolute;position:absolute; top:8px; right:10px;}
+.so_box .more img{ height:24px;}
+table{border-left:1px solid #a2c6d3;border-top:3px solid #0180CF; margin:0 auto;font-size:12px;width:92%;}
+table td{border-right:1px solid #a2c6d3;border-bottom:1px solid #a2c6d3;padding:5px;word-wrap:break-word;word-break:break-all;}
+.tt{background:#e5f2fa;line-height:18px;FONT-SIZE:12px;max-width:596px;}
+.select select{width:100%;padding:5px;border:1px #CACACA solid;height:40px;-webkit-appearance:none;}
+.select option{height:40px;}
+.select{margin:0 auto;width:92%;height:40px;overflow:hidden;}
+.so_but{margin:15px auto;width:92%;text-align:center;margin-top:12px;border:0px;}
+.so_bus{margin:15px auto;width:92%;text-align:left;margin-top:12px;border:0px;}
+.so_but .buts{line-height:200%;padding:5px 25px;background:#0180CF url(line_bg.jpg) repeat-x;border-radius:25px;color:white;border:0px;}
+#boto{margin:0 auto;width:100%;max-width:1200px;min-width:300px;position:fixed;bottom:0px;display:block;}
+.boto{background-color:#ADADAD;color:#000;text-shadow: 0 1px 1px #fff;line-height:180%;}

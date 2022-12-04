@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link href="{{url_for('static',filename='style.css')}}" rel="stylesheet" type="text/css" />
+    <title>{{page_settings["title"]}}</title>
+</head>
+<body>
+    <div class="divs" id="divs">
+        <div id="head" class="head">{{page_settings["title"]}}</div>
+        <div class="main" id="main">
+            <p align="center">&nbsp;</p>
+            <p align="center">{{page_settings['name']}}</p>
+            <table cellspacing=\"0\">
+                <caption align="center">查询结果</caption>
+                <thead><tr class="tt">
+                    {% if data %}
+                        {% for rows in data[0] %}
+                           <td>{{rows}}</td>
+                        {% endfor %}
+                        </tr></thead><tbody><tr>
+                        {% for rows in data[1] %}
+                            <td  data-label="">{{rows}}</td>
+                        {% endfor %}
+                        </tr><tbody></table>
+                    {% else %}
+                        </tr></table>
+                        <h2 align="center">妹有查到哦，看看是不是输错了捏~</h2>
+                    {% endif %}
+
+                    <div class="so_but">
+                            <input type="button" class="buts" value="首页" id="reset" onclick="location.href='?t=back';">
+                    </div>
+        </div>
+        <div class="boto" id="boto">
+        &copy;&nbsp; <a href='{{page_settings["webUrl"]}}' target="_blank">{{page_settings["CopyRight"]}}</a>
+        </div>
+    </div>
+
+</body>
+</html>
